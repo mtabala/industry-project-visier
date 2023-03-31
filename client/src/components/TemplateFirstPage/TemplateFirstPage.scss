@@ -1,3 +1,6 @@
+.section {
+  margin: 0 auto;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -6,4 +9,20 @@
 }
 h1 {
   margin: 2rem;
+  margin-left: 5.8rem;
+}
+image {
+  max-width: 34.375rem;
+}
+.btn-wrap {
+  margin-top: 1rem;
+}
+button {
+  width: 22.0625rem;
+  height: 2.875rem;
+  background-color: #24a3a9;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 5.8rem;
 }

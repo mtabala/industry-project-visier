@@ -23,7 +23,9 @@ function TemplateFirstPage() {
           <img src={img4} alt="img4" />
         </div>
       </div>
-      <button>Apply Template</button>
+      <div className="btn-wrap">
+        <button>Apply Template</button>
+      </div>
     </section>
   );
 }
