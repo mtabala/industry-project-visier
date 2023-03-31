@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import DashboardPage from "./pages/DashboardPage";
 import TemplatePage from "./pages/TemplatePage";
-
 function App() {
     return (
         <BrowserRouter>
@@ -19,5 +18,4 @@ function App() {
         </BrowserRouter>
     );
 }
-
 export default App;
