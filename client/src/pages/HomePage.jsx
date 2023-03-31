@@ -1,15 +1,13 @@
 import CustomizeSection from "../components/CustomizeSection/CustomizeSection";
-// import FormQuiz from "../components/FormQuiz/FormQuiz";
+// import Aside from "../components/Aside/Aside";
+import FormQuiz from "../components/FormQuiz/FormQuiz";
 
 function HomePage() {
-
     return (
         <>
-
-            <CustomizeSection />
-            {/* <FormQuiz /> */}
+            <FormQuiz />
         </>
-    )
+    );
 }
 
 export default HomePage;
