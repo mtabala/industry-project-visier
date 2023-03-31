@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 50%;
+
+    label {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    select {
+      height: 30px;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px #6c63ff;
+      }
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    span {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5349b3;
+    }
+  }
+}
