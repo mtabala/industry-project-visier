@@ -1,5 +1,5 @@
 import "./CustomizeSection.scss"
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import apptrack from "../../assets/images/application-track.svg";
 import summary from "../../assets/images/summary.svg";
 import icons from "../../assets/images/icons.svg"
@@ -17,6 +17,13 @@ import resignation from "../../assets/images/resignation.svg"
 import headcount from "../../assets/images/headcount.svg"
 
 function CustomizeSection() {
+    const navigate = useNavigate()
+
+
+    const handleAnotherClick = () => {
+        navigate("/templates")
+    }
+
     return (
         <main className="main_wrapper">
             <Aside />
@@ -29,7 +36,7 @@ function CustomizeSection() {
                     <img className="customize__img" src={summary} />
                     <div className="customize__submit">
                         <img className="customize__icons" src={icons} />
-                        <Link to="/templates"><button className="customize__button">Customize Dashboard</button></Link>
+                        <button onClick={handleAnotherClick} className="customize__button">Customize Dashboard</button>
                     </div>
                 </article>
 

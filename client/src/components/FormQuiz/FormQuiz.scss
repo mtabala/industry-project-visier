@@ -4,7 +4,20 @@
 .quiz {
     display: flex;
     flex-direction: column;
-    padding: 4rem 10rem;
+    padding: 2rem 7rem;
+
+    &__header-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        border: 2px solid #45999E;
+        padding: 1rem;
+    }
 
     &__header {
         font-size: 3.5rem;
@@ -16,6 +29,7 @@
         line-height: 24px;
         color: #1E293B;
         margin-bottom: 2rem;
+        margin: 0;
     }
 
     &__form {
@@ -47,7 +61,7 @@
     &__form-inputs {
         display: flex;
         flex-direction: column;
-        gap: 0.3rem;
+        gap: 1rem;
     }
 
     &__form-input {
@@ -89,12 +103,17 @@
         padding: 0.5rem;
     }
 
+    &__btn-link {
+        margin: auto;
+        padding: 1rem;
+    }
+
     &__btn {
         width: 164px;
         height: 48px;
         cursor: pointer;
         margin: auto;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 28px;
         border: none;
         border-radius: 4px;
