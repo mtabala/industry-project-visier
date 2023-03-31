@@ -1,0 +1,24 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.aside {
+  max-width: 18.75rem;
+  height: 100vh;
+  background-color: #000000;
+  &__nav {
+    padding-top: 15rem;
+    margin-left: 8rem;
+  }
+
+  &__item {
+    display: flexbox;
+    align-items: center;
+    margin: 2rem;
+    // width: 100%;
+    color: #ffffff;
+    height: 2rem;
+    &:hover {
+      background-color: grey;
+    }
+  }
+}

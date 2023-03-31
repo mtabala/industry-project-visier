@@ -1,12 +1,13 @@
+import Aside from "../components/Aside/Aside";
 import FormQuiz from "../components/FormQuiz/FormQuiz";
 
 function HomePage() {
-
-    return (
-        <>
-            <FormQuiz />
-        </>
-    )
+  return (
+    <>
+      {/* <Aside /> */}
+      <FormQuiz />
+    </>
+  );
 }
 
 export default HomePage;

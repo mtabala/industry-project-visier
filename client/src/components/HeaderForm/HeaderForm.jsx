@@ -1,12 +1,13 @@
 import { NavLink } from "react-router-dom";
-import "./Header.scss";
 import { Link } from "react-router-dom";
+import "./HeaderForm.scss";
+import logo from "../../assets/logos/visier_logo.svg";
 
-function Header() {
+function HeaderForm() {
   return (
     <header className="header">
       <div className="header__container">
-        <h2 className="header__logo">BrainStation Dashboard</h2>
+        <img className="header__logo" src={logo} />
         <div className="header__search">
           <form id="header__form" className="header__form">
             <input
@@ -25,4 +26,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderForm;
