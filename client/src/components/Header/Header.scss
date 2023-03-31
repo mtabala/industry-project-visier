@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/fonts" as *;
+
+.header {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__search {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: baseline;
+  }
+
+  &__logo {
+  height: 1.8rem;
+  margin-top: 0.3rem;
+  
+  }
+
+  &__text {
+    border: 1px solid #6f7682;
+    border-radius: 5px;
+    width: 314px;
+    height: 37px;
+    background-image: url(../../assets/icons/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center left 0.5rem;
+    background-size: 1rem;
+  }
+
+  &__filter {
+    color: $font-primary;
+    font-weight: 600;
+    font-size: 20px;
+    height: 2rem;
+    line-height: 22px;
+  }
+
+  &__date {
+    color: #f6f6f6;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e283b;
+    font-weight: 600;
+    padding: 0.6rem;
+  }
+}
+
+::placeholder {
+  padding-left: 2rem;
+  font-size: 0.9rem;
+
+  @include tablet {
+    padding-left: 2rem;
+  }
+}

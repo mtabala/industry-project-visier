@@ -1,0 +1,129 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 7rem;
+
+    &__header-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__wrapper {
+        border: 2px solid #45999E;
+        padding: 1rem;
+    }
+
+    &__header {
+        font-size: 3.5rem;
+        color: #1E293B;
+    }
+
+    &__subheader {
+        font-size: 18px;
+        line-height: 24px;
+        color: #1E293B;
+        margin-bottom: 2rem;
+        margin: 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__form-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-label {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.8rem;
+        text-align: center;
+    }
+
+    &__form-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__form-input {
+        &--text {
+            width: 250px;
+            height: 40px;
+            color: #6F7682;
+            border: 1px solid #6F7682;
+            border-radius: 5px;
+            margin: auto;
+            padding: 0.4rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__form-industry,
+    &__form-goal,
+    &__form-occupation {
+        display: flex;
+        flex-direction: column;
+        width: 26%;
+    }
+
+    &__form-header {
+        margin-bottom: 0.5rem;
+    }
+
+    &__form-text {
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+    }
+
+    &__forms-inputs-wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: #6F7682;
+        border: 1px solid #6F7682;
+        border-radius: 5px;
+        padding: 0.5rem;
+    }
+
+    &__btn-link {
+        margin: auto;
+        padding: 1rem;
+    }
+
+    &__btn {
+        width: 164px;
+        height: 48px;
+        cursor: pointer;
+        margin: auto;
+        font-size: 14px;
+        line-height: 28px;
+        border: none;
+        border-radius: 4px;
+        background-color: $background-button-dark;
+        color: $font-button-light;
+    }
+
+    &__form-error {
+        padding-top: 0.1rem;
+        color: red;
+        margin: auto;
+    }
+}

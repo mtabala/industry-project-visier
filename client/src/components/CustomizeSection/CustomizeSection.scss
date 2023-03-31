@@ -1,0 +1,50 @@
+.main_wrapper {
+    display: flex;
+}
+
+.customize {
+
+    width: 100%;
+
+    &__wrapper {
+        padding: 2rem;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    &__button {
+        width: 314px;
+        height: 62px;
+        background-color: #24A3A9;
+        border: none;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 16px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    &__submit {
+        width: 315px;
+    }
+
+    &__icons {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.percentage__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.charts__wrapper {
+    padding: 0 3rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
