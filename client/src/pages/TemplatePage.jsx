@@ -1,10 +1,13 @@
-import React from "react";
-import SideBar from "../components/SideBar/SideBar";
+// import TemplateFirstPage from "../components/TemplateFirstPage/TemplateFirstPage";
+// import SideBar from "../components/SideBar/SideBar";
 
-export default function TemplatePage() {
-  return (
-    <div>
-      <SideBar />
-    </div>
-  );
+function TemplatePage() {
+    return (
+        <section className="template">
+            {/* <SideBar />
+            <TemplateFirstPage /> */}
+        </section>
+    );
 }
+
+export default TemplatePage;
